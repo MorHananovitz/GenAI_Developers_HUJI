@@ -2,6 +2,11 @@
 
 This repository contains training materials for Hebrew University of Jerusalem (HUJI) students taking the Generative AI class. These resources support the introduction to Large Language Models (LLMs) lessons.
 
+Author: Mor Hananovitz (c)
+
+<img src="https://huji-executives.org/wp-content/uploads/2021/05/%D7%A1%D7%95%D7%A4%D7%99-%D7%9C%D7%90%D7%AA%D7%A8-01.png" width="300">
+
+
 ## Course Content
 
 The materials in this repository cover:
