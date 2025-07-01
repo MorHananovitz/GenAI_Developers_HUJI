@@ -22,8 +22,15 @@ The materials in this repository cover:
 
 ## Repository Structure
 
+- `/chatbot` - Materials for chatbot development
+  - `chatbot_parts.ipynb` - Components and building blocks for chatbots
+  - `pizza_chatbot.ipynb` - End-to-end pizza ordering chatbot example
 - `/langchain` - Notebooks and examples for LangChain framework
+  - `introduction_to_langchain.ipynb` - Introduction to the LangChain framework
 - `/open source models` - Materials for working with open source LLMs
+  - `using_open_source_models.ipynb` - Guide to using open source models
+- `/prompt engineering` - Resources for effective prompt design
+  - `intro_to_GenAI_openai.ipynb` - Introduction to GenAI and OpenAI
 
 ## Tech Stack & Installation
 
@@ -36,7 +43,7 @@ The materials in this repository cover:
 
 ```bash
 # Install required packages
-pip install langchain openai python-dotenv
+pip install langchain openai python-dotenv streamlit pandas numpy matplotlib seaborn plotly requests beautifulsoup4 lxml html5lib langchain-openai langchain-community langchain-core
 ```
 
 For open source models:
@@ -54,10 +61,53 @@ OPENAI_API_KEY=your_api_key_here
 
 ## Getting Started
 
+### Option 1: Using Makefile (Recommended)
+
 1. Clone this repository
-2. Install the required dependencies
-3. Set up your environment variables
+2. Run `make setup` to create a virtual environment and install dependencies
+3. Activate the virtual environment with `source venv/bin/activate`
 4. Run the Jupyter notebooks to explore the materials
+
+Available make commands:
+- `make setup` - Create virtual environment and install all dependencies
+- `make install` - Install dependencies in existing virtual environment
+- `make install-req` - Install dependencies from requirements.txt
+- `make clean` - Remove virtual environment and cached files
+- `make help` - Display help information
+
+### Option 2: Using requirements.txt
+
+1. Clone this repository
+2. Create and activate a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+3. Install dependencies from requirements.txt:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Set up your environment variables
+5. Run the Jupyter notebooks to explore the materials
+
+### Option 3: Manual Setup
+
+1. Clone this repository
+2. Create and activate a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+3. Install the required dependencies:
+   ```bash
+   pip install langchain openai python-dotenv streamlit pandas numpy matplotlib seaborn plotly requests beautifulsoup4 lxml html5lib langchain-openai langchain-community langchain-core
+   ```
+4. For open source models:
+   ```bash
+   pip install transformers torch
+   ```
+5. Set up your environment variables
+6. Run the Jupyter notebooks to explore the materials
 
 ## Additional Resources
 
